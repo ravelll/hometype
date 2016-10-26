@@ -78,7 +78,7 @@ KeySequence.prototype.getKeyChar = function(e) {
   var key = KeyIdentifiers.toChar(e.keyIdentifier);
 
   if (e.shiftKey) {
-    key = key.toUpperCase();
+    key = String(key).toUpperCase();
   }
 
   if (e.metaKey) {
